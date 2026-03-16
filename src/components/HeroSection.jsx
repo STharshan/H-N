@@ -23,16 +23,18 @@ export default function HeroSection({
       <div className="max-w-7xl mx-auto">
 
         {/* Background Video */}
-     <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/poster.png"
+          onError={(e) => (e.currentTarget.style.display = "none")}
+        >
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50" />
