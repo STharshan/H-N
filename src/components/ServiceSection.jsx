@@ -6,7 +6,7 @@ const PPFServices = ({ title = "OUR SERVICES", services = Services }) => {
   const [showPopup, setShowPopup] = useState(false);
 
   return (
-    <div id="services" className="bg-[#F3F4F6] dark:bg-black py-12">
+    <div id="services" className="bg-[#F3F4F6] dark:bg-black py-12 p-5">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Heading */}
@@ -20,7 +20,7 @@ const PPFServices = ({ title = "OUR SERVICES", services = Services }) => {
         </div>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {services.map((service, index) => (
             <div
               key={index}
